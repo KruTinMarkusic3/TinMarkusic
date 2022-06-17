@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+h3{
+	font-style: italic;
+	color: #6D6D6D;
+	font-weight: 200;
+}
+
+#container{
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #181818;
+	height: 70px;
+	z-index: 1;
+}
+
+#header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+  float: right;
+  margin-right: 50px;
+  color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 30px;
+  order: 2;
+}
+
+.logo:hover{
+  color: #A9CEC2;
+}
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+nav{
+  float: left;
+  order: 1;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 20px;
+	padding-top: 0px;
+	position: relative;
+}
+
+nav a{
+	color: white;
+	font-size: 14px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+nav a:hover{
+	color: #A9CEC2;
+}
+
+nav a::before{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0%;
+	background-color: #A9CEC2;
+	position: absolute;
+	top: 0;
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+	width: 100%;
+}
+
+.button {
+	background-color: white;
+	border: none;
+  width: 200px;
+	border-radius: 12px;
+	color: #2A2929;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	cursor: pointer;
+  transition: ease-out 0.3s;
+  display: block;
+}
+
+.button:hover{
+  border: 1px solid white;
+  color: #A9CEC2;
+  background-color: #181818;
+}
+
+.box{
+	display: inline-block;
+	width: 300px;
+  min-height: 250px;
+	margin: 20px;
+  text-align: center;
+}
+
+.jpg{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.vj-text{
+  text-align: center;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.vj-p{
+  text-align: left;
+  width: 1000px;
+  margin-left: 125px;
+  padding-bottom: 30px;
+}
+
+#pimg1, #pimg2, #pimg3, #pimg4{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#pimg1{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/DJ.jpg);
+	min-height: 240mm;
+}
+
+#pimg2{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/Akro2.jpg);
+	min-height: 240mm;
+}
+
+#pimg3{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/PROJ2.jpg);
+	min-height: 240mm;
+}
+
+#pimg4{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(doc/Vjezba9_TinMarkusic.mp4);
+	min-height: 240mm;
+}
+
+.section{
+	text-align: center;
+	padding: 20px 100px;
+}
+
+.section2{
+	text-align: center;
+	padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+}
+
+.section-o-meni{
+	padding: 50px 50px;
+  text-align: center;
+  margin: auto;
+}
+
+#box-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+#box-dark{
+	background-color: #181818;
+	color: #ddd;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.o-meni-text{
+  text-align: center;
+}
+
+.o-meni{
+  text-align: left;
+  padding: 30px;
+  display: inline-block;
+  width: 400px;
+  margin-right: 50px;
+}
+
+.o-meni-img{
+  display: inline-block;
+  padding: 30px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #2A2929;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #000;
+}
+
+.container-signup {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	color: #000;
+}
+
+@media screen and (max-width:768px){
+  #pimg1, #pimg2, #pimg3, #pimg4, #pimg5, #pimg6, #pimg7{
+    background-attachment:scroll;
+  }
+}
+
+@media screen and (max-width: 1024px){
+	nav ul{
+		width: 60%;
+	}
+}
