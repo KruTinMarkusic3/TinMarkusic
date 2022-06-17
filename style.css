@@ -179,7 +179,7 @@ nav a:hover::before{
 }
 
 #pimg4{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(doc/Vjezba9_TinMarkusic.mp4);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Vjezba9_TinMarkusic.mp4);
 	min-height: 240mm;
 }
 
